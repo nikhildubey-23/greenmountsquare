@@ -48,18 +48,11 @@
     </div>
     <div class="hero-content">
       <h1 class="hero-title">Green Mount</h1>
-      <p class="hero-subtitle">Commercial Retail & Business Complex</p>
-      <p class="hero-desc">Premium commercial destination in the heart of Sakri, Bilaspur</p>
-      <p class="hero-rera">RERA: PCGRERA290526002104</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">Enquire Now <i class="fas fa-arrow-right"></i></a>
-        <a href="#about" class="btn btn-outline">Explore More <i class="fas fa-chevron-down"></i></a>
-      </div>
-      <div class="hero-stats">
-        <div><span class="stat-num">5K+</span><span>Families Catchment</span></div>
-        <div><span class="stat-num">3</span><span>Floors</span></div>
-        <div><span class="stat-num">Prime</span><span>Corner Location</span></div>
-      </div>
+      
+      
+      <div class="hero-rera-box"><strong>RERA:</strong> PCGRERA290526002104</div>
+      
+     
     </div>
   </section>
 
@@ -87,6 +80,23 @@
           </div>
           <a href="#contact" class="btn btn-primary">Get in Touch</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Gallery -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Gallery</span>
+        <h2>Our <span class="highlight">Gallery</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="{{ url_for('static', filename='images/img1_herosection.webp') }}" alt="Gallery 1"></div>
+        <div class="gallery-item"><img src="{{ url_for('static', filename='images/about_section.webp') }}" alt="Gallery 2"></div>
+        <div class="gallery-item"><img src="{{ url_for('static', filename='images/img1.webp') }}" alt="Gallery 3"></div>
+        <div class="gallery-item"><img src="{{ url_for('static', filename='images/img2.webp') }}" alt="Gallery 4"></div>
       </div>
     </div>
   </section>
@@ -187,22 +197,7 @@
 
 
 
-  <!-- Gallery -->
-  <section class="gallery section" id="gallery">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Gallery</span>
-        <h2>Our <span class="highlight">Gallery</span></h2>
-        <div class="divider"></div>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item"><img src="{{ url_for('static', filename='images/img1_herosection.webp') }}" alt="Gallery 1"></div>
-        <div class="gallery-item"><img src="{{ url_for('static', filename='images/about_section.webp') }}" alt="Gallery 2"></div>
-        <div class="gallery-item"><img src="{{ url_for('static', filename='images/img1.webp') }}" alt="Gallery 3"></div>
-        <div class="gallery-item"><img src="{{ url_for('static', filename='images/img2.webp') }}" alt="Gallery 4"></div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- Contact Section -->
   <section class="contact section" id="contact">
@@ -262,7 +257,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Green Mount. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: var(--accent);"></i></p>
+        <p>&copy; 2026 Green Mount. All Rights Reserved. | Designed by snverse</p>
       </div>
     </div>
   </footer>
