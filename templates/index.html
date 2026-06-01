@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenMount Square | Premium Commercial Complex</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="brand-icon"><i class="fas fa-building"></i></span>
+        <div>
+          <h1 class="brand-name">GreenMount <span class="highlight">Square</span></h1>
+          <p class="brand-tagline">Premium Commercial Destination</p>
+        </div>
+      </div>
+      <div class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#specs">Specifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-slider">
+      <div class="slide active" style="background-image: url('{{ url_for('static', filename='images/img1_herosection.jpeg') }}')"></div>
+      <div class="slide" style="background-image: url('{{ url_for('static', filename='images/img1.jpeg') }}')"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">GreenMount <span class="highlight">Square</span></h1>
+      <p class="hero-subtitle">Commercial Retail & Business Complex</p>
+      <p class="hero-desc">Premium commercial destination in the heart of Sakri, Bilaspur</p>
+      <p class="hero-rera">RERA: PCGRERA290526002104</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        <a href="#about" class="btn btn-outline">Explore More <i class="fas fa-chevron-down"></i></a>
+      </div>
+      <div class="hero-stats">
+        <div><span class="stat-num">5K+</span><span>Families Catchment</span></div>
+        <div><span class="stat-num">3</span><span>Floors</span></div>
+        <div><span class="stat-num">Prime</span><span>Corner Location</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About</span>
+        <h2>Project <span class="highlight">Overview</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="{{ url_for('static', filename='images/about_section.jpeg') }}" alt="GreenMount Square">
+          <div class="about-exp"><span>Premium</span><br>Commercial</div>
+        </div>
+        <div class="about-content">
+          <p><strong>GreenMount Square</strong> is a premium commercial development strategically located in Sakri, Bilaspur. The project is designed to maximize business visibility through its prominent corner architecture, high-exposure frontage, and modern commercial design.</p>
+          <p>The development is surrounded by strong social infrastructure and approximately <strong>5,000 nearby residential families</strong>, creating consistent customer footfall and business opportunities.</p>
+          <div class="about-features">
+            <div><i class="fas fa-map-pin"></i> Corner Plot</div>
+            <div><i class="fas fa-store"></i> Retail Shops</div>
+            <div><i class="fas fa-briefcase"></i> Business Offices</div>
+            <div><i class="fas fa-chart-line"></i> High ROI</div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="highlights section" id="highlights">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Choose</span>
+        <h2>Key <span class="highlight">Highlights</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card"><div class="h-icon"><i class="fas fa-location-dot"></i></div><h3>Prime Location</h3><p>Prominent corner location in Sakri, Bilaspur on Mungeli Road</p></div>
+        <div class="highlight-card"><div class="h-icon"><i class="fas fa-eye"></i></div><h3>High Visibility</h3><p>Corner plot with maximum road exposure and modern façade</p></div>
+        <div class="highlight-card"><div class="h-icon"><i class="fas fa-users"></i></div><h3>5,000+ Families</h3><p>Strong residential catchment ensuring consistent footfall</p></div>
+        <div class="highlight-card"><div class="h-icon"><i class="fas fa-school"></i></div><h3>Near School</h3><p>Close proximity to Jain International School</p></div>
+        <div class="highlight-card"><div class="h-icon"><i class="fas fa-train"></i></div><h3>Excellent Connectivity</h3><p>Connected through Uslapur railway development corridor</p></div>
+        <div class="highlight-card"><div class="h-icon"><i class="fas fa-building"></i></div><h3>Modern Design</h3><p>Contemporary architecture with premium finishes</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="location section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Location</span>
+        <h2>Location <span class="highlight">Advantages</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="location-grid">
+        <div class="location-info">
+          <ul class="location-list">
+            <li><i class="fas fa-check-circle"></i> Situated in one of Bilaspur's well-known centrally connected neighborhoods</li>
+            <li><i class="fas fa-check-circle"></i> Near Jain International School</li>
+            <li><i class="fas fa-check-circle"></i> Connected through the Uslapur railway development corridor</li>
+            <li><i class="fas fa-check-circle"></i> Easy access to major residential and commercial zones</li>
+            <li><i class="fas fa-check-circle"></i> Located on Mungeli Road, a growing commercial stretch</li>
+            <li><i class="fas fa-check-circle"></i> Opposite Rama Life City, Sakri, Bilaspur</li>
+          </ul>
+          <div class="address-box">
+            <i class="fas fa-map-marked-alt"></i>
+            <p>GreenMount Square, Opposite Rama Life City, Mungeli Road, Sakri, Bilaspur, Chhattisgarh</p>
+          </div>
+        </div>
+        <div class="location-map">
+          <iframe src="https://www.google.com/maps?q=22.1032192,82.0938427&z=17&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specs Section -->
+  <section class="specs section" id="specs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Quality</span>
+        <h2>Construction <span class="highlight">Specifications</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="specs-grid">
+        <div class="spec-card"><i class="fas fa-dharmachakra"></i><h4>Structure</h4><p>RCC framed structure</p></div>
+        <div class="spec-card"><i class="fas fa-border-all"></i><h4>Flooring</h4><p>800×800 mm double-charged vitrified tiles (branded)</p></div>
+        <div class="spec-card"><i class="fas fa-gem"></i><h4>Common Areas</h4><p>Granite and tile finishes as per architectural design</p></div>
+        <div class="spec-card"><i class="fas fa-elevator"></i><h4>Lift</h4><p>Schindler / Kone / Thyssenkrupp or equivalent</p></div>
+        <div class="spec-card"><i class="fas fa-bolt"></i><h4>Electrical</h4><p>ISI-certified copper wiring (equivalent to Havells)</p></div>
+        <div class="spec-card"><i class="fas fa-toggle-on"></i><h4>Switches</h4><p>Havells or equivalent</p></div>
+        <div class="spec-card"><i class="fas fa-paint-roller"></i><h4>Internal Walls</h4><p>Birla Wall Care</p></div>
+        <div class="spec-card"><i class="fas fa-paint-brush"></i><h4>External Walls</h4><p>Birla White</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floor Maps Section -->
+  <section class="maps section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Floor Plans</span>
+        <h2>Our <span class="highlight">Floor Maps</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="maps-tabs">
+        <button class="map-tab active" data-map="map1">Ground Floor</button>
+        <button class="map-tab" data-map="map2">First Floor</button>
+        <button class="map-tab" data-map="map3">Second Floor</button>
+      </div>
+      <div class="maps-display">
+        <img id="mapDisplay"
+          src="{{ url_for('static', filename='images/map1_groud_flore.png') }}"
+          data-map1="{{ url_for('static', filename='images/map1_groud_flore.png') }}"
+          data-map2="{{ url_for('static', filename='images/map2_first_floor.png') }}"
+          data-map3="{{ url_for('static', filename='images/map3_second_floor.png') }}"
+          alt="Floor Map">
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Audience -->
+  <section class="audience section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">For Whom</span>
+        <h2>Target <span class="highlight">Audience</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="audience-grid">
+        <div class="audience-card"><i class="fas fa-tag"></i><h4>Retail Brands</h4></div>
+        <div class="audience-card"><i class="fas fa-handshake"></i><h4>Franchise Businesses</h4></div>
+        <div class="audience-card"><i class="fas fa-utensils"></i><h4>Restaurants & Cafés</h4></div>
+        <div class="audience-card"><i class="fas fa-hospital"></i><h4>Medical Stores & Clinics</h4></div>
+        <div class="audience-card"><i class="fas fa-briefcase"></i><h4>Offices & Service Providers</h4></div>
+        <div class="audience-card"><i class="fas fa-coins"></i><h4>Commercial Investors</h4></div>
+        <div class="audience-card"><i class="fas fa-user-tie"></i><h4>Local Entrepreneurs</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Developer Projects -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2>Developer's <span class="highlight">Projects</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card"><div class="project-icon"><i class="fas fa-city"></i></div><h4>Rama Life City</h4><p>Residential Colony</p></div>
+        <div class="project-card"><div class="project-icon"><i class="fas fa-home"></i></div><h4>Asma City Homes</h4><p>Residential Colony</p></div>
+        <div class="project-card"><div class="project-icon"><i class="fas fa-tree"></i></div><h4>Nature City</h4><p>Residential Colony</p></div>
+        <div class="project-card"><div class="project-icon"><i class="fas fa-leaf"></i></div><h4>Ganesh Vatika</h4><p>Residential Project</p></div>
+        <div class="project-card"><div class="project-icon"><i class="fas fa-school"></i></div><h4>Jain International School</h4><p>Educational Institution</p></div>
+        <div class="project-card"><div class="project-icon"><i class="fas fa-building"></i></div><h4>Ambience Business Park</h4><p>Commercial Complex</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Gallery</span>
+        <h2>Our <span class="highlight">Gallery</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="{{ url_for('static', filename='images/img1_herosection.jpeg') }}" alt="Gallery 1"></div>
+        <div class="gallery-item"><img src="{{ url_for('static', filename='images/about_section.jpeg') }}" alt="Gallery 2"></div>
+        <div class="gallery-item"><img src="{{ url_for('static', filename='images/img1.jpeg') }}" alt="Gallery 3"></div>
+        <div class="gallery-item"><img src="{{ url_for('static', filename='images/img2.jpeg') }}" alt="Gallery 4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Connect</span>
+        <h2>Get In <span class="highlight">Touch</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card"><i class="fas fa-map-marker-alt"></i><div><h4>Site Address</h4><p>GreenMount Square, Opposite Rama Life City, Mungeli Road, Sakri, Bilaspur, Chhattisgarh</p></div></div>
+          <div class="contact-card"><i class="fas fa-location-dot"></i><div><h4>Office Address</h4><p>Om Jee Tower, Near Atal Awas Chowk, Sakri, Bilaspur, Chhattisgarh</p></div></div>
+          <div class="contact-card"><i class="fas fa-user-tie"></i><div><h4>Management</h4><p>Akhilesh Agrawal & Arvind (Ravi) Goyal</p></div></div>
+          <div class="contact-card"><i class="fas fa-phone-alt"></i><div><h4>Phone</h4><p><a href="tel:+919425257261">+91 94252 57261</a><br><a href="tel:+917610320000">+91 76103 20000</a></p></div></div>
+          <div class="contact-card"><i class="fas fa-envelope"></i><div><h4>Email</h4><p><a href="mailto:greenmountsquare1@gmail.com">greenmountsquare1@gmail.com</a></p></div></div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+          <div class="form-group"><input type="email" placeholder="Your Email" required></div>
+          <div class="form-group"><input type="tel" placeholder="Phone Number" required></div>
+          <div class="form-group"><textarea placeholder="Your Message" rows="4"></textarea></div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>GreenMount <span class="highlight">Square</span></h3>
+          <p>Premium Commercial Retail & Business Complex in Sakri, Bilaspur. Your gateway to prime business opportunities.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#specs">Specifications</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-phone"></i> +91 94252 57261</p>
+          <p><i class="fas fa-phone"></i> +91 76103 20000</p>
+          <p><i class="fas fa-envelope"></i> greenmountsquare1@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Sakri, Bilaspur, Chhattisgarh</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GreenMount Square. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: var(--accent);"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
